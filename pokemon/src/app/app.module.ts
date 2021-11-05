@@ -4,15 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { PokemonPowersComponent } from './pokemon-powers/pokemon-powers.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
 import { PokemonNameComponent } from './pokemon-name/pokemon-name.component';
+import { PokemonServicesComponent } from './pokemon-services/pokemon-services.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PokemonPowersComponent,
-    PokemonNameComponent
+    PokemonNameComponent,
+    PokemonServicesComponent,
   ],
   imports: [
     BrowserModule,
