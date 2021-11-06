@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 import { PokemonNameComponent } from './pokemon-name/pokemon-name.component';
 import { PokemonServicesComponent } from './pokemon-services/pokemon-services.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PokemonServicesComponent } from './pokemon-services/pokemon-services.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
