@@ -11,13 +11,17 @@ export class AppComponent implements OnInit {
   pokemonlist: string[] = [];
   constructor(private pokemonSerivce: PokemonSerivceService) {}
 
-  NgOnInit() {
+  ngOnInit() {
     this.pokemon = JSON.parse(<string>localStorage.getItem('pokemon'))
   }
 }
 onGetPokemon(pokemon: string): void {
   this.pokemonSerivce.getPokemon().subscribe(pokemon => {
-    this.pokemon = pokemon);
-  }; 
+    this.pokemon = pokemon
+    console.log(pokemon)
+  });
 }
+
+function pokemon(pokemon: any, string: any) {
+  throw new Error('Function not implemented.');
 }
