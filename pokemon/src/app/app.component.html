@@ -1,12 +1,8 @@
-<app-header></app-header>
-<app-pokemon-name>
+
   <button class="btn btn-primary" (click)="onGetPokemon(pokemon)" type="button">
     Get Pokemon
   </button>
-  <div class="container cc-look" *ngIf="pokemon"> {{ pokemon.pokemon }}
+  <div class="container cc-look" *ngIf="pokemon"> {{ pokemon.pokemon }}</div>
     <button class="btn btn-primary" (click)="onGetPokemon(pokemon)" type="button">
       Get Pokemon
     </button>
-  </div>
-</app-pokemon-name>
-<app-pokemon-services></app-pokemon-services>
