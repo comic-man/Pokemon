@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class PokemonSerivceService {
   constructor(private http: HttpClient) { }
-  
+
   getPokemon() {
     return this.http
     .get<string>('https://pokeapi.co/api/v2/{endpoint}/', {

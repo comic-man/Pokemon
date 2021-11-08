@@ -15,12 +15,12 @@ export class AppComponent implements OnInit {
     this.pokemon = JSON.parse(<string>localStorage.getItem('pokemon'))
   }
 }
-onGetPokemon(pokemon: string): void {
-  this.pokemonSerivce.getPokemon().subscribe(pokemon => {
-    this.pokemon = pokemon
-    console.log(pokemon)
-  });
-}
+// onGetPokemon(pokemon, "string"), void {
+//   this:pokemonSerivce.getPokemon().subscribe(pokemon => {
+//     this.pokemon = pokemon
+//     console.log(pokemon)
+//   }),
+// }
 
 function pokemon(pokemon: any, string: any) {
   throw new Error('Function not implemented.');
