@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NameComponent } from './name/name.component';
 import { PowersComponent } from './powers/powers.component';
+import { RoutingComponent } from './routing/routing.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { PowersComponent } from './powers/powers.component';
     HeaderComponent,
     NameComponent,
     PowersComponent,
+    RoutingComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,
